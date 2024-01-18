@@ -87,3 +87,19 @@ if __name__ == "__main__":
 
     director.build_full_product()
     print(director.builder.product().list_parts())
+
+
+#sve u svemu trebamo da imamo proizvod neki
+#nakon toga neke metode koje treba da nam rese buildovanje
+#Builder treba da poziva te metode i da napravi jedinstven objekat
+# NPR Proizvod je auto koji ima metode vrata (5,3) set felni(18/19/17 inch)
+#zatamnjena stakla, body kit itd to su seteri i geteri
+# onda mozemo da imamo 2/3 buildera koja kreiraju ModeranAuto,SportskiAuto, Klasik, Custom itd
+# kasnije ih samo kreiramo i vracamo sta se zahtevalo :D
+
+
+#Jedan zajednicki prozivod koji treba da se modifikuje sa builderima
+# Jedan bulderi sa fjoma koji menjaju proizvod
+# Vise direktora koji pozivaju fje i menjaju
+#Koliko sam ukapirao builder treba da ima metode koje su get/set za objekat i tjt
+# pozivima buildera kreiramo sta nam treba
