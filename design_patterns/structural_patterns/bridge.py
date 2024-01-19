@@ -61,4 +61,14 @@ if __name__ == "__main__":
 #kasnije pravimo apstrakcije necega gde koristimo implementacije
 
 
-# OVako ja vidim to. Neka fabrika napravi neke instance prema nekim interfejsu. Recimo da imamo abstraktnu fabriku televizora, gde se vracaju neki TV, i da pravimo apstrakcije daljinskih upravljaca koji imaju jedno polje kao kompoziciju tv i kasnije samo pravimo razlicite daljince sa odredjenim metodama i tjt
+#Bridge treba da razdvoji to / da se prati 4 pravila normalne forme
+# OVako ja vidim to. Neka fabrika napravi neke instance prema nekim interfejsu.
+# Recimo da imamo abstraktnu fabriku televizora, gde se vracaju neki TV,
+# i da pravimo apstrakcije daljinskih upravljaca koji imaju jedno polje kao
+# kompoziciju tv i kasnije samo pravimo razlicite daljince sa odredjenim metodama i tjt
+
+# recimo da imamo tv i daljinac zamislimo to kao tabelu
+# zadovoljava 1 nf
+# npr zavisi kako modelujemo ali po meni ne zadovoljava 2 NF jer je TV zavistan od daljinca
+# ali i da recimo zadovoljava 2 NF nekako Daljinac bi onda zavisio od kljuca TV
+# sto znaci da mora da se odvoji
